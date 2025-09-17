@@ -94,7 +94,7 @@ It’s essential for verifying vulnerabilities like injection, authentication by
 
       <img width="1868" height="540" alt="image" src="https://github.com/user-attachments/assets/9035d3fe-7a58-40c9-8988-0576b77879fc" />
 
-📌 Repeater interface components:
+### 📌 Repeater interface components:
 
 1. Request List – Displays all Repeater requests; lets you manage and switch between multiple entries.
 
@@ -110,7 +110,7 @@ It’s essential for verifying vulnerabilities like injection, authentication by
 
    <img width="1914" height="860" alt="image" src="https://github.com/user-attachments/assets/45bdb5f6-49b7-4a5e-aecd-925939f02ff1" />
 
-📌 Repeater response view components: 
+### 📌 Repeater response view components: 
 
 <img width="400" height="100" alt="image" src="https://github.com/user-attachments/assets/259215de-4555-41c7-9278-532c11673de5" />
 
@@ -124,7 +124,7 @@ It’s essential for verifying vulnerabilities like injection, authentication by
 
 5. Newline Icon (\n) – Toggles line endings for better readability in raw views.
 
-📌 Repeater Inspector Components: 
+### 📌 Repeater Inspector Components: 
 
 <img width="298" height="248" alt="image" src="https://github.com/user-attachments/assets/f6a306b2-c600-497c-b246-1fc01821099e" />
 
@@ -151,7 +151,7 @@ You can test multiple payloads across different parameters efficiently
 
 It’s essential for discovering input-based vulnerabilities like SQLi, XSS, and authentication flaws
 
-📌 Intruder interface components:
+### 📌 Intruder interface components:
 
 <img width="1352" height="700" alt="image" src="https://github.com/user-attachments/assets/dbd2d742-972a-4f17-b1ff-53411e5fe11c" />
 
@@ -172,7 +172,7 @@ It’s essential for discovering input-based vulnerabilities like SQLi, XSS, and
 
 8. Payload Position Markers – Highlighted with § symbols in the request to indicate where payloads will be injected.
 
-📌 Intruder Payloads Tab Components 
+### 📌 Intruder Payloads Tab Components 
 
 <img width="1295" height="809" alt="image" src="https://github.com/user-attachments/assets/07e38c1b-be63-4b50-96c5-a2bec962ef0c" />
 
@@ -210,11 +210,6 @@ Options include: URL-encode these characters, URL-encode all characters
 
 Useful for bypassing filters or matching expected input formats.
 
-📌 Intruder Attack Types:
-
-Here you go, Tasneem — a clean breakdown of **📌 Intruder Attack Types**, styled to match your guide and ready to drop into your documentation:
-
----
 
 ### 📌 Intruder Attack Types
 
