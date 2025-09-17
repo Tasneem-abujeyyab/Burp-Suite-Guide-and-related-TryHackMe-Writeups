@@ -1,4 +1,4 @@
-# Burp-Suite-Guide-related-TryHackMe-Writeups
+# Burp-Suite-Guide-and-related-TryHackMe-Writeups
 ## 📍 Introduction
 Burp Suite is one of the most powerful tools in a web security analyst’s arsenal — and it’s often the first hands-on experience many aspiring professionals have with real-world vulnerability testing. Whether you're exploring injection flaws, broken authentication, or insecure deserialization, Burp gives you the ability to intercept, manipulate, and analyze HTTP traffic like a pro.
 
