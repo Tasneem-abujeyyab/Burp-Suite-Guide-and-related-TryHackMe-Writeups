@@ -43,7 +43,7 @@ Burp Suite is available in both Community Edition (free) and Professional Editio
 
 4. Click Start Burp to open the main dashboard
 
-## 🧰 Key Features Explained
+## 🧰 Key Features 
 Burp Suite is more than just a proxy — it’s a full toolkit for web application testing. Each module serves a specific purpose, and learning how to use them together is what turns you from a passive observer into an active analyst.
 
 ## 🔹 Proxy
@@ -69,6 +69,27 @@ It’s the gateway to deeper analysis using other Burp tools like Repeater and I
 5. Proxy Settings: Accessible via the Proxy → Options tab, these settings let you fine-tune behavior. For example; By default, Burp doesn’t intercept server responses — but you can enable this selectively using custom rules.
 
    <img width="986" height="519" alt="image" src="https://github.com/user-attachments/assets/492df41f-a1e6-4a9e-a7b0-d430fd730ac2" />
+
+## 🔹 Repeater
+Burp Suite’s Repeater tool is designed for manual request manipulation. It allows you to resend HTTP/S requests with custom modifications and observe how the server responds — without needing to reload the page or interact with the browser.
+
+Why It Matters ? 
+It gives you full control over request structure and content
+
+You can test how the server reacts to different inputs
+
+It’s essential for verifying vulnerabilities like injection, authentication bypass, and logic flaws
+
+📌 Key Capabilities
+1. Manual Request Editing: Repeater lets you modify headers, parameters, cookies, and body content with precision — ideal for crafting payloads or testing edge cases.
+
+2. Real-Time Response Analysis: Each request generates a response in a separate tab, allowing you to compare server behavior across different inputs.
+
+3. Multiple Tabs: You can open multiple Repeater tabs to test variations side-by-side — useful for tracking subtle differences in responses.
+
+4. No Automation Noise: Unlike Intruder, Repeater is fully manual, making it perfect for focused, deliberate testing without overwhelming the server.
+
+5. Send from Proxy: You can right-click any intercepted request in Proxy and send it directly to Repeater for deeper analysis — a common workflow in web app testing.
 
    
 
