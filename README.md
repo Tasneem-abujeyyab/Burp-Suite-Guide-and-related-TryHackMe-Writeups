@@ -110,5 +110,109 @@ It’s essential for verifying vulnerabilities like injection, authentication by
 
    <img width="1914" height="860" alt="image" src="https://github.com/user-attachments/assets/45bdb5f6-49b7-4a5e-aecd-925939f02ff1" />
 
+📌 Repeater response view components: 
+
+<img width="400" height="100" alt="image" src="https://github.com/user-attachments/assets/259215de-4555-41c7-9278-532c11673de5" />
+
+1. Pretty – Displays the response in a clean, readable format (HTML rendered or structured JSON).
+   
+2. Raw – Shows the full unprocessed response, including headers and body.
+
+3. Hex – Presents the response in hexadecimal format for low-level analysis.
+
+4. Render – Attempts to visually render the response as a webpage (useful for HTML content).
+
+5. Newline Icon (\n) – Toggles line endings for better readability in raw views.
+
+📌 Repeater Inspector Components: 
+
+<img width="298" height="248" alt="image" src="https://github.com/user-attachments/assets/f6a306b2-c600-497c-b246-1fc01821099e" />
+
+1. Headers – Displays and allows editing of request headers (e.g., Host, User-Agent, Cookie) in a structured format.
+
+2. Query Parameters – Lists URL parameters and lets you modify them easily without touching raw text.
+
+3. Body Parameters – Shows form fields or JSON keys in POST requests, making it easier to test input manipulation.
+
+4. Cookies – Separates cookies from headers for clearer inspection and editing.
+
+5. Annotations – Lets you add notes or tags to requests for tracking and documentation.
+
+6. Raw View Toggle – Switches between structured Inspector view and raw request editor.
+
+## 🔹 Intruder
+Burp Suite’s Intruder tool is designed for automated request manipulation and payload injection. It allows you to send multiple variations of a request to a target and analyze how the server responds — ideal for fuzzing, brute-forcing, and vulnerability discovery.
+
+Why It Matters ?
+ 
+It automates repetitive testing tasks like fuzzing and brute-force attacks
+
+You can test multiple payloads across different parameters efficiently
+
+It’s essential for discovering input-based vulnerabilities like SQLi, XSS, and authentication flaws
+
+📌 Intruder interface components:
+
+<img width="1352" height="700" alt="image" src="https://github.com/user-attachments/assets/dbd2d742-972a-4f17-b1ff-53411e5fe11c" />
+
+
+1. Target – Displays the host and port of the target server. Auto-filled when sending a request from Proxy or Repeater.
+
+2. Positions Tab – Lets you define which parts of the request will be replaced with payloads. You highlight the insertion points here.
+
+3. Payloads Tab – Configure payload types, wordlists, encoding, and payload processing rules.
+
+4. Options Tab – Fine-tune attack behavior, grep settings, redirection handling, and response analysis preferences.
+
+5. Results Tab – Shows all responses from the attack, sortable by status code, response length, and custom match rules.
+
+6. Attack Controls – Buttons to start, pause, resume, or stop the attack and monitor its progress.
+
+7. Request Preview – Displays the raw request being sent, including payload markers (§) for visual reference.
+
+8. Payload Position Markers – Highlighted with § symbols in the request to indicate where payloads will be injected.
+
+📌 Intruder Payloads Tab Components 
+
+<img width="1295" height="809" alt="image" src="https://github.com/user-attachments/assets/07e38c1b-be63-4b50-96c5-a2bec962ef0c" />
+
+The Payloads tab in Burp Suite Intruder is divided into four key sections, each offering granular control over how payloads are created, processed, and encoded:
+
+1. Payload Options
+
+Configure the payload position, payload type, and payload set number.
+
+Displays the request count for the attack.
+
+The dropdowns adjust based on the selected attack type (Sniper, Battering Ram, Pitchfork, Cluster Bomb).
+
+2. Payload Configuration
+
+Add payloads manually using the Add box.
+
+Use buttons like Paste, Load, Save, Remove, Clear, and Deduplicate to manage your payload list.
+
+This section is dynamic — options change depending on the selected payload type (e.g., Simple list, Runtime file, Numbers).
+
+3. Payload Processing
+
+Define rules to transform or filter payloads before sending.
+
+Use Add, Edit, Remove, Up, and Down to manage rule order and behavior.
+
+Examples: capitalize words, apply regex filters, encode values.
+
+4. Payload Encoding
+
+Customize how payloads are encoded before transmission.
+
+Options include:
+
+URL-encode these characters
+
+URL-encode all characters
+
+Useful for bypassing filters or matching expected input formats.
+
 
 
