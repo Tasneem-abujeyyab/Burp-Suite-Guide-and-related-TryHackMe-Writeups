@@ -31,3 +31,14 @@ Automate attacks with payloads and fuzzing
 Analyze responses for signs of vulnerability
 
 In real-world testing scenarios Burp Suite becomes the central hub for understanding how a web app behaves under pressure. It’s not just about finding bugs; it’s about learning how applications communicate, where they break, and how attackers exploit those weaknesses.
+
+## 🛠️ Installation and Setup
+Burp Suite is available in both Community Edition (free) and Professional Edition (paid). For learning and TryHackMe labs, the Community Edition is more than enough.
+
+1. Download Burp Suite from PortSwigger’s official site
+
+2. Install it like any standard application (Windows, macOS, or Linux)
+
+3. Launch Burp Suite and select Temporary Project → Use Burp Defaults
+
+4. Click Start Burp to open the main dashboard
