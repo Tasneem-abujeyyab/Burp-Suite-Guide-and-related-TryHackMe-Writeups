@@ -136,10 +136,6 @@ It’s essential for verifying vulnerabilities like injection, authentication by
 
 4. Cookies – Separates cookies from headers for clearer inspection and editing.
 
-5. Annotations – Lets you add notes or tags to requests for tracking and documentation.
-
-6. Raw View Toggle – Switches between structured Inspector view and raw request editor.
-
 ## 🔹 Intruder
 Burp Suite’s Intruder tool is designed for automated request manipulation and payload injection. It allows you to send multiple variations of a request to a target and analyze how the server responds — ideal for fuzzing, brute-forcing, and vulnerability discovery.
 
