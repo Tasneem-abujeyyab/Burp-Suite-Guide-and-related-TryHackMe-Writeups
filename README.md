@@ -50,6 +50,7 @@ Burp Suite is more than just a proxy — it’s a full toolkit for web applicati
 The Burp Proxy is the core engine of Burp Suite — it intercepts and logs all HTTP/S traffic between your browser and the target web server. This is where you gain full visibility and control over how the application communicates.
 
 Why It Matters ? 
+
 It allows you to pause, inspect, and modify requests before they reach the server
 
 You can forward, drop, or edit requests in real time
@@ -66,4 +67,9 @@ It’s the gateway to deeper analysis using other Burp tools like Repeater and I
 4. Request Control: You can send intercepted requests directly to Repeater, Intruder, or other modules for deeper testing.
 
 5. Proxy Settings: Accessible via the Proxy → Options tab, these settings let you fine-tune behavior. For example; By default, Burp doesn’t intercept server responses — but you can enable this selectively using custom rules.
+
+   <img width="986" height="519" alt="image" src="https://github.com/user-attachments/assets/492df41f-a1e6-4a9e-a7b0-d430fd730ac2" />
+
+   
+
 
