@@ -23,8 +23,11 @@ Burp Suite is a powerful web vulnerability scanner and traffic interception tool
 What makes Burp Suite essential is its versatility. Whether you're testing for SQL injection, cross-site scripting (XSS), insecure authentication, or broken access controls, Burp provides the tools to:
 
 Capture and replay requests
+
 Modify parameters and headers
+
 Automate attacks with payloads and fuzzing
+
 Analyze responses for signs of vulnerability
 
 In real-world testing scenarios Burp Suite becomes the central hub for understanding how a web app behaves under pressure. It’s not just about finding bugs; it’s about learning how applications communicate, where they break, and how attackers exploit those weaknesses.
