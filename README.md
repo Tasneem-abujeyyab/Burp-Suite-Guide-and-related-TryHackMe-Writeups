@@ -206,13 +206,38 @@ Examples: capitalize words, apply regex filters, encode values.
 
 Customize how payloads are encoded before transmission.
 
-Options include:
-
-URL-encode these characters
-
-URL-encode all characters
+Options include: URL-encode these characters, URL-encode all characters
 
 Useful for bypassing filters or matching expected input formats.
 
+📌 Intruder Attack Types:
 
+Here you go, Tasneem — a clean breakdown of **📌 Intruder Attack Types**, styled to match your guide and ready to drop into your documentation:
 
+---
+
+### 📌 Intruder Attack Types
+
+1. **Sniper**  
+   - Uses **one payload set**  
+   - Sends payloads **one at a time** into each marked position  
+   - Ideal for testing **single-parameter vulnerabilities** like XSS or SQLi  
+   - Example: Injecting payloads into a search field to test for reflected input
+
+2. **Battering Ram**  
+   - Uses **one payload set**  
+   - Inserts the **same payload** into **all marked positions simultaneously**  
+   - Useful when multiple parameters are expected to match or behave similarly  
+   - Example: Testing login forms where username and password might be echoed
+
+3. **Pitchfork**  
+   - Uses **multiple payload sets**  
+   - Inserts **one payload per position**, advancing **each set in parallel**  
+   - Great for testing **paired inputs** like username/password combos  
+   - Example: Brute-forcing credentials with matching lists
+
+4. **Cluster Bomb**  
+   - Uses **multiple payload sets**  
+   - Inserts **every possible combination** of payloads across all positions  
+   - Most thorough but also the slowest — ideal for **complex multi-field testing**  
+   - Example: Testing combinations of input fields for logic flaws or chained injections
