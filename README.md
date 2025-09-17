@@ -16,3 +16,15 @@ How to use Burp Suite in TryHackMe rooms to exploit and analyze vulnerabilities
 Tips for filtering noisy traffic, handling HTTPS, and chaining Burp with other tools
 
 How to document your findings for reports
+
+## 🧭 What Is Burp Suite and Why It Matters
+Burp Suite is a powerful web vulnerability scanner and traffic interception tool used by security professionals, penetration testers, and bug bounty hunters to assess the security of web applications. It acts as a man-in-the-middle proxy, allowing you to intercept, inspect, and manipulate HTTP and HTTPS traffic between your browser and a target application.
+
+What makes Burp Suite essential is its versatility. Whether you're testing for SQL injection, cross-site scripting (XSS), insecure authentication, or broken access controls, Burp provides the tools to:
+
+Capture and replay requests
+Modify parameters and headers
+Automate attacks with payloads and fuzzing
+Analyze responses for signs of vulnerability
+
+In real-world testing scenarios Burp Suite becomes the central hub for understanding how a web app behaves under pressure. It’s not just about finding bugs; it’s about learning how applications communicate, where they break, and how attackers exploit those weaknesses.
