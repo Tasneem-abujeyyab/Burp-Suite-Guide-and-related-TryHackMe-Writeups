@@ -74,6 +74,7 @@ It’s the gateway to deeper analysis using other Burp tools like Repeater and I
 Burp Suite’s Repeater tool is designed for manual request manipulation. It allows you to resend HTTP/S requests with custom modifications and observe how the server responds — without needing to reload the page or interact with the browser.
 
 Why It Matters ? 
+
 It gives you full control over request structure and content
 
 You can test how the server reacts to different inputs
@@ -91,6 +92,23 @@ It’s essential for verifying vulnerabilities like injection, authentication by
 
 5. Send from Proxy: You can right-click any intercepted request in Proxy and send it directly to Repeater for deeper analysis — a common workflow in web app testing.
 
-   
+      <img width="1868" height="540" alt="image" src="https://github.com/user-attachments/assets/9035d3fe-7a58-40c9-8988-0576b77879fc" />
+
+📌 Repeater interface components:
+
+1. Request List – Displays all Repeater requests; lets you manage and switch between multiple entries.
+
+2. Request Controls – Buttons to send, cancel, or navigate through request history.
+
+3. Request and Response View – Main area to edit requests and view server responses side by side.
+
+4. Layout Options – Allows you to switch between horizontal, vertical, or tabbed views.
+
+5. Inspector – Offers a structured way to analyze and modify requests beyond raw editing.
+
+6. Target Field
+
+   <img width="1914" height="860" alt="image" src="https://github.com/user-attachments/assets/45bdb5f6-49b7-4a5e-aecd-925939f02ff1" />
+
 
 
