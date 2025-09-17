@@ -57,7 +57,7 @@ You can forward, drop, or edit requests in real time
 
 It’s the gateway to deeper analysis using other Burp tools like Repeater and Intruder
 
-📌 Key Capabilities
+### 📌 Key Capabilities
 1. Intercepting Requests: Requests are held in the Proxy tab, giving you the chance to manipulate them before they’re sent. You can toggle interception using the "Intercept is on" button.
 
 2. Capture and Logging: Even when interception is off, Burp logs all traffic in the HTTP history and WebSocket history tabs — perfect for retrospective analysis.
@@ -81,7 +81,7 @@ You can test how the server reacts to different inputs
 
 It’s essential for verifying vulnerabilities like injection, authentication bypass, and logic flaws
 
-📌 Key Capabilities
+### 📌 Key Capabilities
 1. Manual Request Editing: Repeater lets you modify headers, parameters, cookies, and body content with precision — ideal for crafting payloads or testing edge cases.
 
 2. Real-Time Response Analysis: Each request generates a response in a separate tab, allowing you to compare server behavior across different inputs.
@@ -217,19 +217,19 @@ Useful for bypassing filters or matching expected input formats.
    - Uses **one payload set**  
    - Sends payloads **one at a time** into each marked position  
    - Ideal for testing **single-parameter vulnerabilities** like XSS or SQLi  
-   - Example: Injecting payloads into a search field to test for reflected input
+   - Example: password brute-force or fuzzing for API endpoints
 
 2. **Battering Ram**  
    - Uses **one payload set**  
    - Inserts the **same payload** into **all marked positions simultaneously**  
    - Useful when multiple parameters are expected to match or behave similarly  
-   - Example: Testing login forms where username and password might be echoed
+   - Example: test the same payload against multiple positions at once 
 
 3. **Pitchfork**  
    - Uses **multiple payload sets**  
    - Inserts **one payload per position**, advancing **each set in parallel**  
    - Great for testing **paired inputs** like username/password combos  
-   - Example: Brute-forcing credentials with matching lists
+   - Example: Brute-forcing credentials 
 
 4. **Cluster Bomb**  
    - Uses **multiple payload sets**  
