@@ -36,11 +36,8 @@ In real-world testing scenarios Burp Suite becomes the central hub for understan
 Burp Suite is available in both Community Edition (free) and Professional Edition (paid). For learning and TryHackMe labs, the Community Edition is more than enough.
 
 1. Download Burp Suite from PortSwigger’s official site
-
 2. Install it like any standard application (Windows, macOS, or Linux)
-
 3. Launch Burp Suite and select Temporary Project → Use Burp Defaults
-
 4. Click Start Burp to open the main dashboard
 
 ## 🧰 Key Features 
@@ -177,17 +174,13 @@ The Payloads tab in Burp Suite Intruder is divided into four key sections, each 
 1. Payload Options
 
 - Configure the payload position, payload type, and payload set number.
-
 - Displays the request count for the attack.
-
 - The dropdowns adjust based on the selected attack type (Sniper, Battering Ram, Pitchfork, Cluster Bomb).
 
 2. Payload Configuration
 
 - Add payloads manually using the Add box.
-
 - Use buttons like Paste, Load, Save, Remove, Clear, and Deduplicate to manage your payload list.
-
 - This section is dynamic — options change depending on the selected payload type (e.g., Simple list, Runtime file, Numbers).
 
 3. Payload Processing
@@ -228,3 +221,5 @@ The Payloads tab in Burp Suite Intruder is divided into four key sections, each 
    - Inserts **every possible combination** of payloads across all positions  
    - Most thorough but also the slowest — ideal for **complex multi-field testing**  
    - Example: Testing combinations of input fields for logic flaws or chained injections
+  
+
