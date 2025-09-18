@@ -186,4 +186,29 @@ The Payloads tab in Burp Suite Intruder is divided into four key sections, each 
    - Most thorough but also the slowest — ideal for **complex multi-field testing**  
    - Example: Testing combinations of input fields for logic flaws or chained injections
   
+## 🔹 Decoder
+Burp Suite’s Decoder tool is designed for manual encoding and decoding of data. It helps you transform strings between formats like Base64, URL encoding, HTML encoding, and more — making it essential for analyzing obfuscated or encoded payloads.
 
+Why It Matters ? 
+- It helps you understand and manipulate encoded or obfuscated data
+- You can decode intercepted payloads or responses for analysis
+- It’s useful for crafting encoded payloads during testing
+
+### 📌 Decoder Interface Components:
+
+<img width="1918" height="381" alt="image" src="https://github.com/user-attachments/assets/581bcf2d-5ae4-4cf3-9c08-73e8ec4af431" />
+
+1. Input Panel
+- The top red-outlined box is where you paste or type the data you want to decode or encode.
+- You can work with plain text, encoded strings, or obfuscated payloads.
+
+2. Output Panel
+- The bottom red-outlined box displays the result of the transformation — whether it’s decoded, encoded, or hashed.
+- You can copy the output or send it to other Burp tools like Repeater or Intruder.
+
+3. Dropdown Menus (Right Side of Each Panel)
+- Text – Specifies the format of the input/output (e.g., plain text, hex, Base64).
+- Decode as... – Lets you choose the decoding method (e.g., URL, HTML, Base64).
+- Encode as... – Lets you choose the encoding method for the output.
+
+4. Smart Decode – Automatically detects and applies the correct decoding method — useful for layered encodings.
