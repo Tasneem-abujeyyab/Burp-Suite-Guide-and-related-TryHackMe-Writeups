@@ -176,35 +176,35 @@ The Payloads tab in Burp Suite Intruder is divided into four key sections, each 
 
 1. Payload Options
 
-Configure the payload position, payload type, and payload set number.
+- Configure the payload position, payload type, and payload set number.
 
-Displays the request count for the attack.
+- Displays the request count for the attack.
 
-The dropdowns adjust based on the selected attack type (Sniper, Battering Ram, Pitchfork, Cluster Bomb).
+- The dropdowns adjust based on the selected attack type (Sniper, Battering Ram, Pitchfork, Cluster Bomb).
 
 2. Payload Configuration
 
-Add payloads manually using the Add box.
+- Add payloads manually using the Add box.
 
-Use buttons like Paste, Load, Save, Remove, Clear, and Deduplicate to manage your payload list.
+- Use buttons like Paste, Load, Save, Remove, Clear, and Deduplicate to manage your payload list.
 
-This section is dynamic — options change depending on the selected payload type (e.g., Simple list, Runtime file, Numbers).
+- This section is dynamic — options change depending on the selected payload type (e.g., Simple list, Runtime file, Numbers).
 
 3. Payload Processing
 
-Define rules to transform or filter payloads before sending.
+- Define rules to transform or filter payloads before sending.
 
-Use Add, Edit, Remove, Up, and Down to manage rule order and behavior.
+- Use Add, Edit, Remove, Up, and Down to manage rule order and behavior.
 
-Examples: capitalize words, apply regex filters, encode values.
+- Examples: capitalize words, apply regex filters, encode values.
 
 4. Payload Encoding
 
-Customize how payloads are encoded before transmission.
+- Customize how payloads are encoded before transmission.
 
-Options include: URL-encode these characters, URL-encode all characters
+- Options include: URL-encode these characters, URL-encode all characters
 
-Useful for bypassing filters or matching expected input formats.
+- Useful for bypassing filters or matching expected input formats.
 
 
 ### 📌 Intruder Attack Types
