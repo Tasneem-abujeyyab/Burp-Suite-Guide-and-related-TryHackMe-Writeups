@@ -199,16 +199,117 @@ Why It Matters ?
 <img width="1918" height="381" alt="image" src="https://github.com/user-attachments/assets/581bcf2d-5ae4-4cf3-9c08-73e8ec4af431" />
 
 1. Input Panel
-- The top red-outlined box is where you paste or type the data you want to decode or encode.
-- You can work with plain text, encoded strings, or obfuscated payloads.
+   - The top red-outlined box is where you paste or type the data you want to decode or encode.
+   - You can work with plain text, encoded strings, or obfuscated payloads.
 
 2. Output Panel
-- The bottom red-outlined box displays the result of the transformation — whether it’s decoded, encoded, or hashed.
-- You can copy the output or send it to other Burp tools like Repeater or Intruder.
+   - The bottom red-outlined box displays the result of the transformation — whether it’s decoded, encoded, or hashed.
+   - You can copy the output or send it to other Burp tools like Repeater or Intruder.
 
 3. Dropdown Menus (Right Side of Each Panel)
-- Text – Specifies the format of the input/output (e.g., plain text, hex, Base64).
-- Decode as... – Lets you choose the decoding method (e.g., URL, HTML, Base64).
-- Encode as... – Lets you choose the encoding method for the output.
+  - Text – Specifies the format of the input/output (e.g., plain text, hex, Base64).
+  - Decode as... – Lets you choose the decoding method (e.g., URL, HTML, Base64).
+  - Encode as... – Lets you choose the encoding method for the output.
 
 4. Smart Decode – Automatically detects and applies the correct decoding method — useful for layered encodings.
+
+### 📌 Decoder Hashing Features
+
+<img width="192" height="148" alt="image" src="https://github.com/user-attachments/assets/c13be3a5-315b-4f25-88d3-eec62b98452f" />
+Burp Suite’s Decoder tab includes built-in support for generating cryptographic hashes from any input string. This is useful for analyzing or crafting data used in authentication, integrity checks, or obfuscated payloads.
+
+🔹 Supported Hashing Algorithms
+MD5, SHA-1, SHA-256, SHA-384, SHA-512
+💡 Note: A hashing algorithm’s output is binary — not readable ASCII or Unicode text. That’s why it’s typically converted into a hexadecimal string, which is the familiar “hash” format you see in tools and databases.
+
+### 🔹 Comparer
+Burp Suite’s Comparer tool is designed for side-by-side analysis of data. It helps you identify differences between two requests, responses, or strings — making it ideal for spotting subtle changes in server behavior, session tokens, or application logic.
+
+Why It Matters ? 
+- It reveals hidden changes between two pieces of data
+- You can compare responses from different payloads or user roles
+- It’s essential for analyzing authentication flows, session management, and logic bypasses
+
+### 📌 Key Capabilities
+1. Byte-Level Comparison: Shows differences at the binary level — useful for spotting encoding changes or subtle token shifts.
+2. Text Comparison: Highlights differences in readable text — ideal for comparing HTML, JSON, or error messages.
+3. Visual Diffing: Uses color-coded highlights to make differences easy to spot — especially useful when analyzing long responses.
+
+### 📌 Comparer Interface Components:
+
+<img width="1919" height="877" alt="image" src="https://github.com/user-attachments/assets/5f71b6b1-be71-4d56-b4a5-da865825ef99" />
+
+Perfect, Tasneem — here’s a clean breakdown of the **📌 Comparer interface components**, styled to match your guide and based on your description:
+
+---
+
+### 📌 Comparer Interface Components
+
+1. **Data Table (Left Panel)**  
+   - Displays the items to be compared.  
+   - Each row represents a dataset you’ve loaded or pasted.  
+   - You select **two rows** to perform a comparison.
+
+2. **Data Management Controls (Upper Right)**  
+   - **Paste** – Inserts clipboard content as a new dataset.  
+   - **Load** – Imports data from a file.  
+   - **Remove** – Deletes the currently selected row.  
+   - **Clear** – Removes all datasets from the table.
+
+3. **Comparison Mode Buttons (Lower Right)**  
+   - Choose how to compare the selected datasets:  
+     - **Words** – Compares based on readable text.  
+     - **Bytes** – Compares at the binary level.  
+   - You can switch between modes anytime — the initial choice isn’t permanent.  
+   - These buttons trigger the actual comparison once two datasets are selected.
+
+### 🔹 Sequencer
+Burp Suite’s Sequencer tool is designed for analyzing the randomness and predictability of tokens — such as session IDs, CSRF tokens, or password reset links. It helps you determine whether a web application is generating secure, unpredictable values.
+
+Why It Matters ? 
+- It evaluates the entropy of tokens used in authentication and session management
+- You can detect weak randomness that could lead to token prediction or session hijacking
+- It’s essential for assessing the strength of security-critical identifiers
+
+### 📌 Sequencer Interface Components
+
+<img width="1193" height="612" alt="image" src="https://github.com/user-attachments/assets/78bb1cce-4edd-43da-bb76-1bad952f691b" />
+
+1. **Select Live Capture Request**  
+   - This section lets you configure how Burp Suite will collect tokens for analysis.  
+   - You can send requests from **Proxy**, **Repeater**, or other tools into Sequencer.  
+   - The table displays captured requests with columns like **Host** and **Request**.  
+   - Controls include:  
+     - **Start live capture** – Begins collecting tokens from selected requests  
+     - **Remove** – Deletes a selected request from the list  
+     - **Clear** – Empties the entire request list
+
+2. **Token Location Within Response**  
+   - Defines where Burp should extract the token from each response.  
+   - You can choose from three options:  
+     - **Cookie** – Extracts tokens from Set-Cookie headers  
+     - **Form Field** – Extracts tokens from hidden or visible form fields  
+     - **Custom Location** – Lets you manually configure token extraction using response structure or regex  
+   - The **Configure** button opens a dialog to fine-tune custom extraction rules
+
+### 🔹 Organizer
+Burp Suite’s Organizer tool is designed to help you manage and annotate your testing workflow. It allows you to group, tag, and comment on requests, responses, and findings — making it easier to track progress, revisit key observations, and prepare for reporting.
+
+Why It Matters ? 
+- It helps you stay organized during complex or multi-phase testing
+- You can tag and comment on important requests or findings
+- It’s ideal for building structured notes and preparing for client reports or portfolio documentation
+
+  <img width="1315" height="716" alt="image" src="https://github.com/user-attachments/assets/8815f7e8-4f99-492b-bb7f-ec34eb0baa56" />
+
+### 🔹 Extensions
+Burp Suite’s Extensions tab gives you access to the Burp Extender API, allowing you to install, manage, and develop custom plugins that enhance Burp’s functionality. It’s a powerful way to tailor the tool to your workflow or integrate with external systems.
+
+<img width="1908" height="600" alt="image" src="https://github.com/user-attachments/assets/a574ca7a-c350-4df7-b843-8551fb053d1e" />
+
+Why It Matters
+- You can extend Burp’s capabilities with custom scripts and third-party plugins
+- It supports automation, integration, and customization for advanced testing
+- It’s essential for building repeatable workflows, custom scanners, or tool integrations
+
+# ✅ To put everything we've learned into practice, we'll now move on to solving relevant TryHackMe challenges.
