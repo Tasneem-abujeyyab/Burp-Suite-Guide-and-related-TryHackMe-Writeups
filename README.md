@@ -239,10 +239,6 @@ Why It Matters ?
 
 <img width="1919" height="877" alt="image" src="https://github.com/user-attachments/assets/5f71b6b1-be71-4d56-b4a5-da865825ef99" />
 
-Perfect, Tasneem — here’s a clean breakdown of the **📌 Comparer interface components**, styled to match your guide and based on your description:
-
----
-
 ### 📌 Comparer Interface Components
 
 1. **Data Table (Left Panel)**  
