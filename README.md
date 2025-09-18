@@ -193,17 +193,13 @@ The Payloads tab in Burp Suite Intruder is divided into four key sections, each 
 3. Payload Processing
 
 - Define rules to transform or filter payloads before sending.
-
 - Use Add, Edit, Remove, Up, and Down to manage rule order and behavior.
-
 - Examples: capitalize words, apply regex filters, encode values.
 
 4. Payload Encoding
 
 - Customize how payloads are encoded before transmission.
-
 - Options include: URL-encode these characters, URL-encode all characters
-
 - Useful for bypassing filters or matching expected input formats.
 
 
