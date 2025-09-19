@@ -95,8 +95,37 @@ I ran Steghide on cute-alien.jpg, using the password:
 <img width="398" height="101" alt="image" src="https://github.com/user-attachments/assets/bdf1527a-db42-44cd-b6c7-e5b47f76269e" />
 
 I also found a file named Alien_autospy.jpg. I transferred it to my local machine for further inspection:
-- scp james@10.10.247.245:Alien_autospy.jpg .
-where ** james@10.10.247.245: → remote user and IP
-       **Alien_autospy.jpg → file to copy
-       ** . → destination (your current directory)
 
+<img width="446" height="101" alt="image" src="https://github.com/user-attachments/assets/117d7dc0-d369-431a-84c9-e005712a49c9" />
+
+where
+- james@10.10.247.245: → remote user and IP
+ - Alien_autospy.jpg → file to copy
+ -  . → destination (your current directory)
+
+Doing some google image search: 
+<img width="579" height="173" alt="image" src="https://github.com/user-attachments/assets/9735bc9c-fba3-41f5-ade4-1c4801f94e4c" />
+
+## Task 5: Privilege escalation
+After retrieving the user flag and transferring the alien image, I began investigating ways to escalate privileges and access the root flag.
+
+<img width="1002" height="120" alt="image" src="https://github.com/user-attachments/assets/a7571079-d61e-4f15-8708-3be48b86ff46" />
+
+This listed the commands james could run with sudo. The output revealed: (ALL, !root) /bin/bash
+- At first glance, it looks like the user james is not allowed to run /bin/bash as root. But the ALL part means the user can run it as any user, and the !root exclusion is supposed to block root access.
+
+This caught my attention — it looked exploitable
+
+A quick search led me to CVE-2019-14287, which affects versions of sudo before 1.8.28. The vulnerability allows a user with Runas ALL permissions to bypass the !root restriction by using a crafted UID.
+
+Specifically, running: sudo -u#-1 /bin/bash
+
+And it worked — I was dropped into a root shell:
+<img width="692" height="82" alt="image" src="https://github.com/user-attachments/assets/ab3a2f11-ad05-457d-bf26-0914b2a2f66e" />
+
+I navigated to the root directory and grabbed the final flag:
+<img width="919" height="162" alt="image" src="https://github.com/user-attachments/assets/62e9645a-2451-4fb9-b157-beaead46b2bd" />
+
+After escalating to root and retrieving the final flag from /root/root.txt, I found a message revealing the identity of Agent R.
+
+This wraps up the investigation and answers the final bonus question in the room 🎁
