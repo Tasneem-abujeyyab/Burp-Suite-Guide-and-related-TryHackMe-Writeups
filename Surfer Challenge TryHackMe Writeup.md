@@ -22,13 +22,10 @@ During initial recon, I accessed the path /backup/chat.txt, which revealed a cha
 
 <img width="832" height="401" alt="image" src="https://github.com/user-attachments/assets/7114a40e-c2bb-4e97-a6cf-29b2fa4df377" />
 
-A newly deployed export2pdf tool
-
-A requirement for daily system reports in PDF format
-
-Confirmation that the internal server now serves the flag
-
-A warning about weak credentials
+- A newly deployed export2pdf tool
+- A requirement for daily system reports in PDF format
+- Confirmation that the internal server now serves the flag
+- A warning about weak credentials
 
 🧠 Key Takeaway: This chat confirms that the flag is hosted internally and may be accessible via the PDF export feature. It also suggests that the admin might still be using admin:admin as login credentials — worth testing.
 
@@ -41,4 +38,31 @@ While exploring the application, I accessed the Recent Activity section, which r
  Internal pages hosted at /internal/admin.php. It contains the system flag.
 
 <img width="512" height="321" alt="image" src="https://github.com/user-attachments/assets/6c803e73-fd76-4845-8914-fcc4b6505fcc" />
+
+This page hosts the flag, but direct access is blocked
+
+<img width="715" height="235" alt="image" src="https://github.com/user-attachments/assets/61f4e122-3fb3-4de3-b1e9-e8d0524a0e2d" />
+
+Found a PDF generation feature that exports server metrics. The service pulls content from internal endpoints and renders it as a PDF — a potential SSRF vector.
+
+<img width="1907" height="861" alt="image" src="https://github.com/user-attachments/assets/dd6142fb-7077-4f35-9905-719c80d4d5e2" />
+
+<img width="1045" height="745" alt="image" src="https://github.com/user-attachments/assets/d2f38d80-bf1d-4734-9436-208ea1b0e540" />
+
+
+### 🛠 Exploitation Steps
+Step 1: Intercepted the request using Burp Suite Proxy while exporting the default server-info PDF.
+
+<img width="1906" height="893" alt="image" src="https://github.com/user-attachments/assets/189de8b0-12f1-48ce-a479-2e22fd08df41" />
+
+Step 2: Modified the request URL to target: /internal/admin.php and forward the request 
+
+<img width="1233" height="775" alt="image" src="https://github.com/user-attachments/assets/09b0ade5-1539-4297-987a-71b152721b3f" />
+
+✅ Result: The PDF response contained the flag
+
+<img width="614" height="245" alt="image" src="https://github.com/user-attachments/assets/684ff142-e3fb-4fdd-a951-fbe5c154b2a8" />
+
+
+
 
