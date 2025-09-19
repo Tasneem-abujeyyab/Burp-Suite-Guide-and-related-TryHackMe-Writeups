@@ -8,7 +8,7 @@ Welcome to a quirky web application challenge where we’ll uncover hidden inter
 
 ### 🔍 Initial Recon: Directory Fuzzing & Discovery
 Started with basic directory fuzzing to map out accessible paths.
-
+- gobuster dir --url http://10.10.91.108/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
 
 Found a login page and a robots.txt file.
 robots.txt revealed a disallowed path: /backup/chat.txt 
