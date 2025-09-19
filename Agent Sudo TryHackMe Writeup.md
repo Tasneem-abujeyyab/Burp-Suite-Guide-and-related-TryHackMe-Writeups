@@ -21,6 +21,7 @@ Findings:
 - Port 80: HTTP
 ### How you redirect yourself to a secret page?
 I visited the web server on port 80. The homepage mentioned that agents should use their codename as the User-Agent to access hidden content
+
 <img width="724" height="470" alt="image" src="https://github.com/user-attachments/assets/22996738-5426-4863-b942-5458989162f2" />
 
 so we can access the hidden page by changing our User-Agent in burp suite, by assuming its R as mentioned Agent R
@@ -80,6 +81,7 @@ I decoded it using:
 This is likely the password for a steganography tool — probably used to extract hidden data from one of the images I downloaded earlier.
 
 I ran Steghide on cute-alien.jpg, using the password:
+
 <img width="367" height="78" alt="image" src="https://github.com/user-attachments/assets/a5086b6a-aecd-48ad-a90b-d497b2906c1f" />
 
 - After entering the password, Steghide successfully extracted a file named message.txt
@@ -89,6 +91,7 @@ I ran Steghide on cute-alien.jpg, using the password:
 ## Task 4: Capture the user flag 
 - Now that I had the credentials for the new agent, I attempted to log into the target machine via SSH
 - Once inside, I looked for the user flag. It was located in James’s home directory
+
 <img width="398" height="101" alt="image" src="https://github.com/user-attachments/assets/bdf1527a-db42-44cd-b6c7-e5b47f76269e" />
 
 I also found a file named Alien_autospy.jpg. I transferred it to my local machine for further inspection:
