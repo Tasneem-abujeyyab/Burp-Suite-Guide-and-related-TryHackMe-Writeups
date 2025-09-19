@@ -14,6 +14,7 @@ In this challenge, we dive into a secret server hidden beneath the deep sea ðŸŒŠ
 I will start by using Nmap to scan for open ports and services: 
 
 <img width="808" height="373" alt="image" src="https://github.com/user-attachments/assets/feb3deae-6bec-49a0-90e9-e17c5ed9627a" />
+
 Findings:
 - Port 21: FTP
 - Port 22: SSH
@@ -35,6 +36,7 @@ But when the User-Agent was set to C, the server responded with a 302 Redirect â
 
 I followed the redirect to: http://$IP/agent_C_attention.php
 <img width="772" height="600" alt="image" src="https://github.com/user-attachments/assets/2b3d5fae-b11d-43af-ac28-8fa0a0444149" />
+
 and got this message which is the answer of question 3 ( What is the agent name?) 
 <img width="1021" height="205" alt="image" src="https://github.com/user-attachments/assets/0835e79d-f7a4-4e7c-ab41-57f5c9019bbf" />
 
